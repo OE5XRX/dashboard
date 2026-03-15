@@ -1,0 +1,119 @@
+# Projekte der OE5XRX Organisation
+# Diese Datei ist die zentrale Datenquelle für das Projekt-Dashboard.
+#
+# Felder:
+#   name            - Projektname (Pflicht)
+#   short_description - Kurzbeschreibung (Pflicht)
+#   state           - active | paused | ideas (Pflicht)
+#   status          - Freitext zum aktuellen Stand (Pflicht)
+#   next_step       - Nächster geplanter Schritt (Pflicht)
+#   last_updated    - Datum der letzten Aktualisierung, YYYY-MM-DD (Pflicht)
+#   repo_url        - Link zum GitHub-Repository (Pflicht)
+#   docs_url        - Link zur Dokumentation (optional)
+#   tags            - Liste von Schlagwörtern (Pflicht)
+#   subprojects     - Liste von Unterprojekten (optional)
+#     - name, short_description, repo_url, status
+
+- name: FW-RemoteStation
+  short_description: Firmware für die OE5XRX Remote Station auf Basis von Zephyr RTOS
+  state: active
+  status: Modulare Firmware mit Zephyr RTOS, C++20, heapfrei. CI/CD mit Unit- und Integrationstests aktiv.
+  next_step: Weitere Modulintegration und Hardwaretests
+  last_updated: 2026-03-15
+  repo_url: https://github.com/OE5XRX/FW-RemoteStation
+  tags:
+    - firmware
+    - zephyr
+    - stm32
+    - c++
+
+- name: HW-DebugBoard
+  short_description: Universelles Debug-Board für die OE5XRX-Modulplattform
+  state: active
+  status: Schaltplan-Design in Arbeit. USB-C Hub, INA226, OLED, erweiterbare GPIOs.
+  next_step: Schaltplan fertigstellen und erstes PCB-Layout
+  last_updated: 2026-03-15
+  repo_url: https://github.com/OE5XRX/HW-DebugBoard
+  tags:
+    - hardware
+    - kicad
+    - debug
+    - tool
+
+- name: HW-Module-FMTransceiver
+  short_description: FM-Transceiver-Modul für die OE5XRX-Plattform
+  state: active
+  status: KiCad-Projekt mit CI/CD-Pipeline für Gerber, BOM und Bestückungsdaten.
+  next_step: Prototypenfertigung und Test
+  last_updated: 2026-03-15
+  repo_url: https://github.com/OE5XRX/HW-Module-FMTransceiver
+  tags:
+    - hardware
+    - kicad
+    - transceiver
+    - modul
+
+- name: HW-Module-PowerBoard
+  short_description: Stromversorgungsmodul für die OE5XRX-Plattform
+  state: active
+  status: Schaltplan mit 5V-Versorgung und INA226-basierter Leistungsmessung.
+  next_step: Layout-Review und Prototyp
+  last_updated: 2026-03-15
+  repo_url: https://github.com/OE5XRX/HW-Module-PowerBoard
+  tags:
+    - hardware
+    - kicad
+    - power
+    - modul
+
+- name: HW-Module-BusBoard
+  short_description: Bus-/Verbindungsmodul für die OE5XRX-Plattform
+  state: active
+  status: PCB-Layout vorhanden. Verbindet Geräte-, Power- und Raspberry-Pi-Schnittstellen.
+  next_step: Fertigung und Integrationstest
+  last_updated: 2026-03-15
+  repo_url: https://github.com/OE5XRX/HW-Module-BusBoard
+  tags:
+    - hardware
+    - kicad
+    - bus
+    - modul
+
+- name: HW-Module-DeviceTester
+  short_description: Hardware-Testmodul zur Gerätevalidierung
+  state: active
+  status: KiCad-Projekt mit Bus-Tester- und Device-Tester-Anschlüssen.
+  next_step: Testprozeduren definieren und Prototyp fertigen
+  last_updated: 2026-03-15
+  repo_url: https://github.com/OE5XRX/HW-Module-DeviceTester
+  tags:
+    - hardware
+    - kicad
+    - test
+    - modul
+
+- name: HW-Module-CM4Carrier
+  short_description: Carrier Board für Raspberry Pi Compute Module 4
+  state: active
+  status: Mehrseitiger Schaltplan mit CM4-Interface, Ethernet und microSD.
+  next_step: Layout-Finalisierung und Prototypenfertigung
+  last_updated: 2026-03-15
+  repo_url: https://github.com/OE5XRX/HW-Module-CM4Carrier
+  tags:
+    - hardware
+    - kicad
+    - raspberry-pi
+    - modul
+
+- name: OE5XRX.github.io
+  short_description: Webseite des Amateurfunkclubs OE5XRX
+  state: active
+  status: Live unter oe5xrx.org. Jekyll mit Just the Docs Theme.
+  next_step: Inhalte erweitern
+  last_updated: 2026-03-15
+  repo_url: https://github.com/OE5XRX/OE5XRX.github.io
+  docs_url: https://oe5xrx.org
+  tags:
+    - webseite
+    - jekyll
+    - dokumentation
