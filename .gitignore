@@ -3,3 +3,10 @@
 .jekyll-cache
 Gemfile.lock
 _site
+
+# OE5XRX brand layer (fetched at build via apply-brand action — do not commit)
+/_sass/color_schemes/oe5xrx.scss
+/_includes/head_custom.html
+/assets/fonts/
+/assets/oe5xrx-logo.svg
+/favicon.ico

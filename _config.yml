@@ -2,8 +2,9 @@ title: OE5XRX Dashboard
 description: Projektübersicht des Amateurfunkclubs für Remote Stationen
 
 theme: just-the-docs
-favicon_ico: /favicon.ico
-logo: "/assets/Icon.png"
+color_scheme: oe5xrx
+logo: "/assets/oe5xrx-logo.svg"
+favicon_ico: "/favicon.ico"
 
 aux_links:
   "Hauptseite":
