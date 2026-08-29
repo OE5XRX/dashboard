@@ -20,6 +20,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Apply OE5XRX brand layer
+        uses: OE5XRX/branding/.github/actions/apply-brand@v0.1.0
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
