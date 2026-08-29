@@ -11,3 +11,7 @@ _site
 /assets/oe5xrx-logo.svg
 /favicon.ico
 /apple-touch-icon.png
+/_sass/color_schemes/oe5xrx-dark.scss
+/_sass/custom/
+/_includes/nav_footer_custom.html
+/assets/css/just-the-docs-oe5xrx-dark.scss
